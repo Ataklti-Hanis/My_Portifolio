@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Light Mode Base Styles */
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Dark Mode Base Styles */
+  html.dark body {
+    background-color: #0b0f17;
+    color: #f8fafc;
+  }
+
+  /* High Contrast Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #0f172a;
+  }
+  html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6 {
+    color: #ffffff;
+  }
+
+  /* High Contrast Paragraphs & Subtitles */
+  p {
+    color: #334155;
+  }
+  html.dark p {
+    color: #cbd5e1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #94a3b8;
+  border-radius: 9999px;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+
+/* Background Grids */
+.bg-grid-pattern-light {
+  background-image: radial-gradient(rgba(14, 165, 233, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern-dark {
+  background-image: radial-gradient(rgba(56, 189, 248, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Card High Contrast Overrides */
+.dark .card-contrast {
+  background-color: #131b2e !important;
+  border-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+/* Selection Glow */
+::selection {
+  background-color: #0284c7;
+  color: #ffffff;
+}
