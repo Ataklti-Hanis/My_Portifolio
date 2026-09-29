@@ -97,7 +97,7 @@ export const ContactSection: React.FC = () => {
                   <div>
                     <span className="text-[11px] font-mono uppercase text-slate-400 font-semibold block">GitHub Repositories</span>
                     <a href={profileData.socialLinks.github} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-800 dark:text-slate-200 hover:text-brand-600 transition-colors">
-                      github.com/Ataklti
+                      github.com/Ataklti-Hanis
                     </a>
                   </div>
                 </div>
