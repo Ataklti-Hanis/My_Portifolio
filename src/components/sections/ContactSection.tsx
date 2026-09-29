@@ -97,7 +97,7 @@ export const ContactSection: React.FC = () => {
                   <div>
                     <span className="text-[11px] font-mono uppercase text-slate-400 font-semibold block">GitHub Repositories</span>
                     <a href={profileData.socialLinks.github} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-slate-800 dark:text-slate-200 hover:text-brand-600 transition-colors">
-                      github.com/Ataklti-Hanis
+                      github.com/Ataklti
                     </a>
                   </div>
                 </div>
@@ -128,8 +128,8 @@ export const ContactSection: React.FC = () => {
 
                 {statusMessage && (
                   <div className={`p-4 rounded-xl flex items-start gap-3 text-sm ${statusMessage.type === 'success'
-                      ? 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400'
-                      : 'bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400'
+                    ? 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400'
+                    : 'bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400'
                     }`}>
                     {statusMessage.type === 'success' ? (
                       <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
